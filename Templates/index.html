@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de moeda</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <h1>Converter moeda (real para dólar)</h1>
+    <form action="/converter_moeda" method="post">
+        <label for="real">Valor em Reais:</label>
+        <input name="reais" type="number" id="real">
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    {%if dolares%}
+    <div class="resultado">
+        <h2>Resultado em dólares:</h2>
+        <p><strong>US$:</strong>{{dolares}}</p>
+    </div>
+    {%endif%}
+</body>
+</html>

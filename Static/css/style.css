@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --fundo: #C8E9EC;
+    --texto: #46686b;
+}
+
+
+body{
+    background-color: var(--fundo);
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    color: var(--texto);
+    text-transform: uppercase;
+    text-shadow: #54b1b9 4px 4px 4px;
+    margin-top: 100px;
+}
+
+form{
+    border: 2px #54b1b9 solid;
+    box-shadow: #54b1b9 4px 4px 4px ;
+    border-radius: 40px;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+input{
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: #54b1b9 4px 4px 4px;
+}
+
+button{
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: #54b1b9 4px 4px 4px;
+    background-color: var(--texto);
+    color: var(--fundo);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.resultado{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+label{
+    color: var(--texto);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
