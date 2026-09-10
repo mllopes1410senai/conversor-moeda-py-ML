@@ -9,7 +9,10 @@ def index():
 def converter_moeda():
     reais = float(request.form['reais'])
 
-    dolares = round((reais * 5.1),2)
+    if reais <= 0:
+        dolares = 'Inválido'
+    else:
+        dolares = round((reais * 5.1),2)
 
     return render_template('index.html', reais=reais, dolares=dolares)
 
